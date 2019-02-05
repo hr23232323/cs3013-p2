@@ -1,0 +1,56 @@
+[ 9792.400597] User 1000 is opening file: /usr/share/locale-langpack/en/LC_MESSAGES/libc.mo
+[ 9792.400620] User 1000 is closing file descriptor: 1
+[ 9792.400623] User 1000 is closing file descriptor: 2
+[ 9792.832169] Nothing Read by user
+[ 9796.324721] User 1000 is closing file descriptor: 3
+[ 9796.324728] User 1000 is closing file descriptor: 4
+[ 9796.325210] User 1000 is closing file descriptor: 4
+[ 9796.325219] Nothing Read by user
+[ 9796.325222] User 1000 is closing file descriptor: 3
+[ 9796.325989] User 1000 is opening file: /etc/ld.so.cache
+[ 9796.326003] User 1000 is closing file descriptor: 3
+[ 9796.326030] User 1000 is opening file: /lib/i386-linux-gnu/libc.so.6
+[ 9796.326083] User 1000 is closing file descriptor: 3
+[ 9796.326649] User 1000 is opening file: /usr/lib/locale/locale-archive
+[ 9796.326686] User 1000 is closing file descriptor: 3
+[ 9796.326765] User 1000 is opening file: /var/log/syslog
+[ 9796.326914] Nothing Read by user
+[ 9796.326919] User 1000 is closing file descriptor: 3
+[ 9796.326929] User 1000 is closing file descriptor: 1
+[ 9796.326934] User 1000 is closing file descriptor: 2
+[ 9796.558244] User 1000 is opening file: /home/cshue/.mozilla/firefox/qsriatdu.default/datareporting/aborted-session-ping.tmp
+[ 9796.560181] User 1000 is closing file descriptor: 42
+[ 9797.843239] Nothing Read by user
+[ 9799.753174] User 1000 is opening file: /etc/localtime
+[ 9799.753209] User 1000 is closing file descriptor: 11
+[ 9799.753292] User 1000 is opening file: /etc/localtime
+[ 9799.753304] User 1000 is closing file descriptor: 11
+[ 9800.752973] User 1000 is opening file: /run/user/1000/dconf/user
+[ 9800.753029] User 1000 is closing file descriptor: 26
+[ 9800.753046] User 1000 is opening file: /home/cshue/.config/dconf/user
+[ 9800.753075] User 1000 is closing file descriptor: 26
+[ 9800.885450] User 1000 is closing file descriptor: 3
+[ 9800.885455] User 1000 is closing file descriptor: 4
+[ 9800.885834] User 1000 is closing file descriptor: 4
+[ 9800.885841] Nothing Read by user
+[ 9800.885843] User 1000 is closing file descriptor: 3
+[ 9800.887742] User 1000 is opening file: /etc/ld.so.cache
+[ 9800.887755] User 1000 is closing file descriptor: 3
+[ 9800.887776] User 1000 is opening file: /lib/i386-linux-gnu/libtinfo.so.5
+[ 9800.887809] User 1000 is closing file descriptor: 3
+[ 9800.887822] User 1000 is opening file: /lib/i386-linux-gnu/librt.so.1
+[ 9800.887856] User 1000 is closing file descriptor: 3
+[ 9800.887870] User 1000 is opening file: /lib/i386-linux-gnu/libc.so.6
+[ 9800.887916] User 1000 is closing file descriptor: 3
+[ 9800.887936] User 1000 is opening file: /lib/i386-linux-gnu/libpthread.so.0
+[ 9800.887973] User 1000 is closing file descriptor: 3
+[ 9800.888683] User 1000 is opening file: /usr/lib/locale/locale-archive
+[ 9800.888712] User 1000 is closing file descriptor: 3
+[ 9800.888844] User 1000 is opening file: /lib/terminfo/x/xterm-256color
+[ 9800.888861] Nothing Read by user
+[ 9800.888897] User 1000 is closing file descriptor: 3
+[ 9800.888938] User 1000 is opening file: /home/cshue/.config/terminal-colors.d
+[ 9800.888945] User 1000 is opening file: /etc/terminal-colors.d
+[ 9800.888951] User 1000 is opening file: /dev/kmsg
+[ 9800.888983] User 1000 is opening file: /usr/lib/i386-linux-gnu/gconv/gconv-modules.cache
+[ 9800.888994] User 1000 is closing file descriptor: 4
