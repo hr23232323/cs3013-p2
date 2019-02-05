@@ -48,19 +48,23 @@ asmlinkage long new_sys_cs3013_syscall2(unsigned short *target_pid, struct ances
 
   // Make sure PID is valid
   if(copy_from_user(&pid_copy, target_pid, sizeof(unsigned short))){
-    printk(KERN_INFO "INVALID PID----------------------"); 
     return EFAULT;
   }
 
   if(copy_from_user(new_vals_ptr, response, sizeof(ancestry))){
-    printk(KERN_INFO "INVALID PID----------------------"); 
     return EFAULT;
   }
 
   child_ptr = new_vals_ptr->children;
+  sibling_ptr = new_vals_ptr->siblings;
 
   self = pid_task(find_vpid(pid_copy), PIDTYPE_PID);
+  if(!self){
+    printk(KERN_INFO "INVALID PID----------------------"); 
+    return -1;
+  }
 
+  printk("-------------------------%d---------------------\n", self->pid);
   list_for_each(i, &(self->children)){
     iter = list_entry(i, task_struct, sibling);
     *child_ptr++ = iter->pid;
@@ -70,18 +74,18 @@ asmlinkage long new_sys_cs3013_syscall2(unsigned short *target_pid, struct ances
   // Find and store PID's of all siblings
   list_for_each(i, &(self->sibling)){
     iter = list_entry(i, task_struct, sibling);
-    if(iter->pid == 0){
-      return;
+    if(iter->pid == self->pid || iter->pid ==0){
+      // Same process
+    } else{
+      *sibling_ptr++ = iter->pid;
+      printk(KERN_INFO "---------%d's sibling is %d--------\n", self->pid, iter->pid);
     }
-    *sibling_ptr++ = iter->pid;
-    printk(KERN_INFO "---------%d's sibling is %d--------\n", self->pid, iter->pid);
-  }
+      }
 
   // Traverse through parents using recursion
 
 
-  printk("-------------------------%d---------------------\n", self->pid);
-  return self->pid;
+  return 0;
 
 }
 
